@@ -38,12 +38,6 @@ class Player{
 
     int get_player_id();
 
-    void setTextureID(int new_texture);
-    int getTextureID();
-
-    const char * getFilePath();
-    SDL_RendererFlip getFlip();
-
 
     private:
     
