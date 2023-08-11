@@ -8,7 +8,6 @@ Player::Player()
     _ammo = MAX_AMMO;
     _playerID = -1;
     _action = '\0';
-    _flip = SDL_FLIP_NONE;
 }
 
 
