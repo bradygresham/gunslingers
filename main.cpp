@@ -1,7 +1,8 @@
 #include <iostream>
 
-#include "Game.h"
-//#include "Player.h"
+#include "/home/brady/Desktop/code/cpp/Easy2d/include.h" //library file
+
+#include "Player.h"
 //#include "gameRound.h"
 #include "config.h"
 

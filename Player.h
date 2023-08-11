@@ -4,7 +4,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <string>
-#include "sprite.h"
+#include "/home/brady/Desktop/code/cpp/Easy2d/include.h"
 
 enum enumSpriteStates{
     IDLE_NO_GUN,
