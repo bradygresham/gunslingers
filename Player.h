@@ -48,16 +48,13 @@ class Player{
     private:
     
     Sprite _playerSprite;
-    SDL_RendererFlip _flip;
     int _health;
     int _ammo;
 
     char _action; //'d' for dodge, 'r' for reload, 'f' for fire
     int _playerID; //player1, player 2
 
-    
-
-    //use above enumSpriteStates to access images
+ 
 
 
 };
