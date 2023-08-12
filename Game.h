@@ -21,20 +21,19 @@ class Game{
     private:
     void init_systems();
     //manual initialization
-    void init_systems(SDL_Window* Window, SDL_Renderer* Renderer, const char* title, int x, int y, int w, int h, Uint32 window_flags,  int index, Uint32 rendererFlags);
+    void init_systems(const char* title, int x, int y, int w, int h, Uint32 window_flags, Uint32 rendererFlags);
     void process_input();
     void game_loop();
-    void copyTexturetoRenderer(SDL_Texture* Texture);
+    
     void drawGame();
 
     
     
-
-    SDL_Window *_window;
-    SDL_Renderer * _renderer;
-    SDL_Texture * _texture; //delete this later
-    int _windowHeight;
-    int _windowWidth;
+    //plan to remove these and swap for the classes made in Easy2d engine
+    Window _window;
+    Renderer _renderer;
+    SDL_Texture * _texture; 
+    //
     const char* _pathToBackgroundImage; //delete this later
     gameState _gameState;
 

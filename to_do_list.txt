@@ -1,3 +1,4 @@
 1. create texture class
 2. create animation class
 3. complete sprite class
+4. make error class
