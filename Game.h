@@ -32,7 +32,7 @@ class Game{
     //plan to remove these and swap for the classes made in Easy2d engine
     Window _window;
     Renderer _renderer;
-    SDL_Texture * _texture; 
+    Texture _texture; 
     //
     const char* _pathToBackgroundImage; //delete this later
     gameState _gameState;

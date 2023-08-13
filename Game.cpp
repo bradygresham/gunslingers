@@ -2,15 +2,12 @@
 
 Game::Game()
 {
-    _texture = nullptr;
     _gameState = gameState::PLAY;
     _pathToBackgroundImage = "sprite_images/desert_pngs/bg_desert.png";    
 }
 
 Game::~Game()
 {
-    
-    SDL_DestroyTexture(_texture);
     SDL_Quit();
 }
 
@@ -25,8 +22,7 @@ void Game::init_systems()
 {
     SDL_Init(SDL_INIT_EVERYTHING);
     _window.init_window();
-    
-
+    _renderer.init_renderer(_window.getWindow(), 0);
 }
 
 void Game::init_systems(const char* title, int x, int y, int w, int h, Uint32 window_flags, Uint32 rendererFlags)
