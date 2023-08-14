@@ -1,14 +1,14 @@
 #include <iostream>
-
-#include "/home/brady/Desktop/code/cpp/Easy2d/include.h" //library file
-
-#include "Player.h"
+#include "../Easy2d/textureManager.h"
+#include"Game.h"
 //#include "gameRound.h"
 
 int main(int argc, char* argv[]){
     
 
-    
+    Game g;
+	g.run();
+	textureManager::destroyCache();
 	return EXIT_SUCCESS;
     
 }

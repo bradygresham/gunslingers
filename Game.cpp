@@ -1,4 +1,5 @@
 #include "Game.h"
+#include <SDL2/SDL.h>
 
 Game::Game()
 {
@@ -14,6 +15,7 @@ Game::~Game()
 void Game::run()
 {
     init_systems();
+    drawGame();
     game_loop();
     
 }
@@ -34,6 +36,8 @@ void Game::init_systems(const char* title, int x, int y, int w, int h, Uint32 wi
 
 void Game::drawGame()
 {
+    _texture.setTexture("sprite_images/desert_pngs/bg_desert.png");
+    _renderer.copyTexturetoRenderer(_texture.getTexture());
     SDL_RenderPresent(_renderer.getRenderer());
 }
 
