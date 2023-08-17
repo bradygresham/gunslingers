@@ -4,7 +4,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <string>
-#include "/home/brady/Desktop/code/cpp/Easy2d/Sprite.h"
+#include "../Easy2d/Sprite.h"
 
 enum enumSpriteStates{
     IDLE_NO_GUN,
@@ -41,7 +41,7 @@ class Player{
 
     private:
     
-    Sprite _playerSprite;
+    Sprite _playerSprite; //from easy2d
     int _health;
     int _ammo;
 
