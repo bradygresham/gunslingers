@@ -1,5 +1,9 @@
 #!/bin/bash
 
-g++ -o gunslinger main.cpp Player.cpp Game.cpp gameRound.cpp -lSDL2 -lSDL2_image
+cpp_files="main.cpp Player.cpp Game.cpp gameRound.cpp 
+../Easy2d/ResourceManager.cpp ../Easy2d/Sprite.cpp 
+../Easy2d/Error.cpp ../Easy2d/Renderer.cpp 
+../Easy2d/Texture.cpp ../Easy2d/textureManager.cpp ../Easy2d/Window.cpp"
+g++ -o gunslinger $cpp_files -lSDL2 -lSDL2_image
 
 
