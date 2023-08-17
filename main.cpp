@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
 
     Game g;
 	g.run();
-	ResourceManager::destroyCache();
+	//ResourceManager::destroyCache(); its possible this is not the way to do this
 	return EXIT_SUCCESS;
     
 }

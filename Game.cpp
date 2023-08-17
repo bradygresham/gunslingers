@@ -4,7 +4,7 @@
 Game::Game()
 {
     _gameState = gameState::PLAY;
-    _pathToBackgroundImage = "sprite_images/desert_pngs/bg_desert.png";    
+    _pathToBackgroundImage = "/home/laptop/Desktop/cpp/gunslingers/sprite_images/desert_pngs/bg_desert.png";    
 }
 
 Game::~Game()
@@ -36,7 +36,7 @@ void Game::init_systems(const char* title, int x, int y, int w, int h, Uint32 wi
 
 void Game::drawGame()
 {
-    _texture.setTexture("sprite_images/desert_pngs/bg_desert.png");
+    _texture.setTexture(_pathToBackgroundImage);
     _renderer.copyTexturetoRenderer(_texture.getTexture());
     SDL_RenderPresent(_renderer.getRenderer());
 }
