@@ -4,9 +4,8 @@
 Game::Game()
 {
     _gameState = gameState::PLAY;
-    _pathToBackgroundImage = "/home/laptop/Desktop/cpp/gunslingers/sprite_images/desert_pngs/bg_desert.png";    
+    
 }
-
 Game::~Game()
 {
     SDL_Quit();
@@ -30,13 +29,15 @@ void Game::init_systems()
 void Game::init_systems(const char* title, int x, int y, int w, int h, Uint32 window_flags, Uint32 rendererFlags)
 {
     SDL_Init(SDL_INIT_EVERYTHING);
+    
     _window.init_window(title, x, y, w, h, window_flags);
     _renderer.init_renderer(_window.getWindow(), rendererFlags);
 }
 
 void Game::drawGame()
 {
-    _texture.setTexture(_pathToBackgroundImage);
+    const char* filePath = "/home/laptop/Pictures/razorback.png";
+    _texture.setTexture(_renderer.getRenderer(), filePath);
     _renderer.copyTexturetoRenderer(_texture.getTexture());
     SDL_RenderPresent(_renderer.getRenderer());
 }

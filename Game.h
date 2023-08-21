@@ -38,7 +38,7 @@ class Game{
     Renderer _renderer;
     Texture _texture; 
     //
-    const char* _pathToBackgroundImage; //delete this later
+    
     gameState _gameState;
 
 
