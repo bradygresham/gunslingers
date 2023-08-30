@@ -20,8 +20,6 @@ class Game{
 
     void run();
     
-    
-    
     private:
     void init_systems();
     //manual initialization
@@ -31,16 +29,8 @@ class Game{
     void game_loop();
     void drawGame();
 
-    
-    
-    //plan to remove these and swap for the classes made in Easy2d engine
     Window _window;
     Renderer _renderer;
     Texture _texture; 
-    //
-    
     gameState _gameState;
-
-
-    
 };

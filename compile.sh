@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#maybe try: *.cpp ../Easy2d/*.cpp
 cpp_files="main.cpp Player.cpp Game.cpp gameRound.cpp 
 ../Easy2d/ResourceManager.cpp ../Easy2d/Sprite.cpp 
 ../Easy2d/Error.cpp ../Easy2d/Renderer.cpp 

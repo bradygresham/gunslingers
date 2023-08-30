@@ -2,13 +2,9 @@
 #include "../Easy2d/ResourceManager.h"
 #include"Game.h"
 //#include "gameRound.h"
-
+//rename Easy2d to Ready2Render
 int main(int argc, char* argv[]){
-    
-
     Game g;
 	g.run();
-	//ResourceManager::destroyCache(); its possible this is not the way to do this
 	return EXIT_SUCCESS;
-    
 }

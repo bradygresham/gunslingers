@@ -1,3 +1,0 @@
-1. create texture class
-2. complete sprite class
-3. create window and renderer flag enum in class header
