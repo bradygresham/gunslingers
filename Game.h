@@ -8,6 +8,7 @@
 #include "../Easy2d/Renderer.h"
 #include "../Easy2d/Window.h"
 #include "../Easy2d/Texture.h"
+#include "../Easy2d/Camera.h"
 
 
 enum class gameState{PLAY, EXIT};
@@ -32,5 +33,6 @@ class Game{
     Window _window;
     Renderer _renderer;
     Texture _texture; 
+    Camera _camera;
     gameState _gameState;
 };

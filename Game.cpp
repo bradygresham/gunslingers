@@ -22,7 +22,7 @@ void Game::init_systems()
     SDL_Init(SDL_INIT_EVERYTHING);
     _window.init_window();
     _renderer.init_renderer(_window.getWindow(), 0);
-    
+    _camera.init_camera(_window.get_width(), _window.get_height());
 }
 
 void Game::init_systems(const char* title, int x, int y, int w, int h, Uint32 window_flags, Uint32 rendererFlags)
@@ -37,6 +37,7 @@ void Game::drawGame() //update
 {
     const char* filePath = "/home/laptop/Pictures/razorback.png";
     _texture.setTexture(_renderer.getRenderer(), filePath);
+    _camera.applyCamera(_renderer.getRenderer());
     _renderer.copyTexturetoRenderer(_texture.getTexture());
     SDL_RenderPresent(_renderer.getRenderer());
 }
